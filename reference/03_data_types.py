@@ -37,6 +37,8 @@ BASIC DATA TYPES
 
     - boolean (bool): True or False
 
+    - NoneType (None): Use it when a variable shouldn't have a value yet.
+
 TERMINOLOGY
 -----------
 
@@ -70,12 +72,19 @@ print(money)
 bacon_liked = True
 print(bacon_liked)
 
-# 5. DISPLAY THE TYPE OF A VARIABLE
+# 5. CREATE A NONETYPE
+# Create a variable called "food_eaten_for_dinner" and store None inside it.
+# Use None when you need a variable, but don't want to store data in it yet.
+# None is like an empty placeholder
+food_eaten_for_dinner = None
+print(food_eaten_for_dinner)
+
+# 6. DISPLAY THE TYPE OF A VARIABLE
 # If you want to see what the data type is, use print(type(variable_name))
 # Try printing out the data type of your bacon boolean
 print(type(bacon_liked))
 
-# 6. COMBINING INTS AND FLOATS
+# 7. COMBINING INTS AND FLOATS
 # Try adding together your age and money variable using a plus sign +
 # Store the result in a new variable and print it out. Try printing out the
 # type of your new variable.
@@ -84,7 +93,7 @@ result = age + money
 print(result)
 print(type(result))
 
-# 7. STORING A NUMBER AS A STRING
+# 8. STORING A NUMBER AS A STRING
 # Make a variable that stores your age, but as a string instead of as an
 # integer. Print out the data type of the original age variable and the new
 # age variable. Try adding your string age variable to the money variable
@@ -120,7 +129,7 @@ I will usually not use Hungarian notation this semester, but feel free to use
 it if you like it.
 '''
 
-# 8. USE HUNGARIAN NOTATION
+# 9. USE HUNGARIAN NOTATION
 # Create another variable for age, but this time, use hungarian notation
 i_age = 34
 
@@ -137,7 +146,7 @@ I think they are useful in very specific situations (making functions) which
 I'll mention later in the semester. I won't use them otherwise.
 '''
 
-# 9. USE A TYPE HINT
+# 10. USE A TYPE HINT
 # Create another age variable and give it a type hint of int
 # Remember this doesn't actually change anything about the variable
 # Try adding a mismatched type hint. Notice it doesn't actually do anything.
