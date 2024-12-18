@@ -1,8 +1,10 @@
-# optional stuff that will clear the window each time you run it.
 import os
 import platform
 
 def clear_screen():
+    """
+    Clears the terminal screen to make it easier to follow along with code.
+    """
     if platform.system() == 'Windows':
         os.system('cls')
     else:
@@ -10,51 +12,121 @@ def clear_screen():
 
 clear_screen()
 
-###########################
-# START READING HERE
-###########################
-
+# ==========
 # DATA TYPES
+# ==========
 
 '''
-string: for storing text
+OVERVIEW
+--------
+In coding, data types specify the kind of data that a variable can hold.
 
-integer (or int): Whole numbers, no decimals
+Python is dynamically typed, meaning you don't have to explicitly specify
+the data type of a variable before hand.
 
-float: number w/ decimals
+You simple declare the variable name, and provide it with a value. 
 
-boolean: True or False. 
+BASIC DATA TYPES
+-----------------
 
+    - string (str): storing text
+
+    - integer (int): whole numbers
+
+    - float (float): numbers with decimals
+
+    - boolean (bool): True or False
+
+TERMINOLOGY
+-----------
+
+When you create a variable, it is called "declaring"
+When you put a value inside of a variable you are "initializing" the variable
+
+In Python, you just declare and initialize a variable at the same time.
 
 '''
 
-# store you name in a variable
-# you can use single or double quotes
+
+# 1. CREATE A STRING 
+# Store your name in a string. To make something a string, put the value in
+# double of single quotes " " or ' '
 
 
-# store your age in a variable
-
-# store how much money is in your pocket in a variable
-
-
-# state whether you like bacon or not
+# 2. CREATE AN INT
+# Store your age in a variable
 
 
-
-# if you want to see what the data type is:
-# print(type(variableName))
-
-# remember that python is dynamically typed! (instead of statically typed)
-
-# PRACTICE #1
-#   store an integer and a float in two separate variables. Print out their sum.
+# 3. CREATE A FLOAT
+# Store how much money is in your pocket in a variable
 
 
+# 4. CREATE A BOOLEAN
+# Store whether you like bacon or not in a variable. For booleans, you MUST
+# use either True or False as the value, with a capital T or F.
 
-# Hungarian notation
+
+# 5. DISPLAY THE TYPE OF A VARIABLE
+# If you want to see what the data type is, use print(type(variable_name))
+# Try printing out the data type of your bacon boolean
+
+
+# 6. COMBINING INTS AND FLOATS
+# Try adding together your age and money variable using a plus sign +
+# Store the result in a new variable and print it out. Try printing out the
+# type of your new variable.
+
+
+# 7. STORING A NUMBER AS A STRING
+# Make a variable that stores your age, but as a string instead of as an
+# integer. Print out the data type of the original age variable and the new
+# age variable. Try adding your string age variable to the money variable
+
+
+
 '''
-Sometimes, people like to put the name of the datatype in the name of the variable
-This is optional, but I recommend it if you want to keep track of what type it is
-Just remember, don't name it something like iMoney if you are actually storing a Float
+HUNGARIAN NOTATION
+------------------
+Sometimes, coders like to put the name of the datatype in the name of the
+variable.
+
+For example for the integer variable age, you might name the variable:
+    i_age
+    iAge
+    int_age
+    intAge
+
+Notice you can use Hungarian Notation with any naming convention (snake case, 
+camel case, etc.)
+
+Hungarian notation is optional, but potentially useful to
+keep track of what type a variable is at a glance. Just remember, because
+Python is dynamically typed, you could accidentally give a variable a
+misleading name.
+
+I will usually not use Hungarian notation this semester, but feel free to use
+it if you like it.
 '''
+
+# 8. USE HUNGARIAN NOTATION
+# Create another variable for age, but this time, use hungarian notation
+
+
+
+'''
+TYPE HINTS
+----------
+Type hints let you show your intention for the data type when creating a
+variable.
+
+age: int = 20
+
+I think they are useful in very specific situations (making functions) which
+I'll mention later in the semester. I won't use them otherwise.
+'''
+
+# 9. USE A TYPE HINT
+# Create another age variable and give it a type hint of int
+# Remember this doesn't actually change anything about the variable
+# Try adding a mismatched type hint. Notice it doesn't actually do anything.
 
