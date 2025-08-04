@@ -17,6 +17,28 @@ vary.
 
 You give the bucket (the variable) a name, and then an = and then the value to
 store into it.
+
+WHERE ARE VARIABLES STORED ON YOUR COMPUTER?
+--------------------------------------------
+You are probably used to storing files (like a Microsoft Word document) on your
+computer. When you store a file like that, it is stored "on disk" on your hard
+drive. Think of that as long term memory, like how your brain remembers facts
+like "how many states are in the USA"
+
+However, when you create a variable in python, it is stored "in memory"
+temporarily while your python code runs. In your computer, this is called RAM.
+Once your python code is finished running (meaning every instruction from the
+top to the bottom has been executed) then your computer just forgets any 
+variables you created and their values.
+
+Think of it like your parent telling you what to get at the grocery store. Your
+brain stores that in short-term memory long enough for you to complete the task,
+and then you discard the information. For example, do you remember exactly what
+you bought from the grocery store a year ago? No, because it wasn't committed to
+long term memory.
+
+Later on in class, we'll learn how to store variables to your computer's "long 
+term memory", aka the hard drive.
 '''
 
 

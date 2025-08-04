@@ -114,7 +114,7 @@ keep track of what type a variable is at a glance. Just remember, because
 Python is dynamically typed, you could accidentally give a variable a
 misleading name.
 
-I will usually not use Hungarian notation this semester, but feel free to use
+I will not usually use Hungarian notation this semester, but feel free to use
 it if you like it.
 '''
 
@@ -123,25 +123,3 @@ it if you like it.
 i_age = 34
 
 
-'''
-TYPE HINTS
-----------
-Type hints let you show your intention for the data type when creating a
-variable.
-
-age: int = 20
-
-I think they are useful in very specific situations (making functions) which
-I'll mention later in the semester. I won't use them otherwise.
-'''
-
-# 10. USE A TYPE HINT
-# Create another age variable and give it a type hint of int
-# Remember this doesn't actually change anything about the variable
-# Try adding a mismatched type hint. Notice it doesn't actually do anything.
-
-another_age: int = 21
-print(type(another_age))
-
-another_age: str = 21
-print(type(another_age))
