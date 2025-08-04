@@ -15,7 +15,7 @@ However, you also want your code to be understood by
     1: YOU when you come back to read it in days, weeks, months or years
     2: OTHERS that need to use your code or alter it.
 
-Python and all other coding languages all you to create comments in your code.
+Python and all other coding languages allow you to create comments in your code.
 
 SYNTAX
 ------
